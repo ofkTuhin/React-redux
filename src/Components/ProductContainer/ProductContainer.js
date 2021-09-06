@@ -13,7 +13,7 @@ const ProductContainer = () => {
     return (
     <>
             
-              { Object.keys(products).length==0?
+              { Object.keys(products).length===0?
                   <div className="loader">
                   <Loader
               type="Puff"
@@ -29,7 +29,7 @@ const ProductContainer = () => {
                      products.map(data=>
                         <div className="col-lg-3">
                       <Link to ={`/productDetails/${data.id}`}><div className="product">
-                        <img src={data.image}/>
+                        <img src={data.image} alt="img"/>
                         <p>{data.id}</p>
                       </div></Link>
                   </div>

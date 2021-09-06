@@ -1,10 +1,10 @@
 
-import Product from './Components/Product/Product';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+
 } from "react-router-dom";
 import Home from './Components/Home/Home';
 import ProductContainer from './Components/ProductContainer/ProductContainer';

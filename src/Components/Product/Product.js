@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import ProductContainer from '../ProductContainer/ProductContainer';
-import axios from 'axios'
-import {setProducts,fetchProducts} from '../../Redux/action/ProductAction'
+
+import {fetchProducts} from '../../Redux/action/ProductAction'
 
 const Product = () => {
     
@@ -20,7 +20,7 @@ const Product = () => {
       dispatch(fetchProducts()) 
     //   
       
-   },[])
+   },[dispatch])
     return (
         <div className="container">
         
